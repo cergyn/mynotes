@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Notes</title>
+    <link rel="icon" href="/favicon.ico">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/scripts/client.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="delete-modal" class="modal">
+        <div class="modal-container">
+          <h1>Delete Item</h1>
+          <p>Are you sure you want to delete this item?</p>
+        
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('delete-modal').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="button" id="btn-delete-modal" class="deletebtn">Delete</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard" id="dashboard">
+            Stats
+        </div>
+        <div class="upper-body" id="upper-body" >
+            <!-- Job items will be added here -->
+        </div>
+        <div class="lower-body">
+            <div class="new-item">
+                <label class="new-job-label" id="new-job-label" for="new-job-text">Job:</label>
+                <input type="text" class="new-job-text" id="new-job-text" placeholder="Enter job description">
+                <button class="new-job-button" id="new-job-button">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.job-item {
+    display: flex; 
+    flex-direction: row; 
+    min-height: 2rem;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: yellow;
+    background-color: purple;
+    align-items: center;
+    margin: 5px;
+    width: calc(100% - (2 * margin));
+}
+
+.job-text {
+    flex: 1;
+}
+
+.dashboard {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+.new-job-button, .delete-button {
+    width: 8%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    height: 30px;
+}
+
+.new-job-label {
+  width: 5%;
+  height: 30px;
+}
+
+.new-job-text {
+    margin: 0px; width: 85%;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.upper-body {
+    background-color: lightblue;
+    height: calc(100% - 5rem);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.lower-body {
+    margin-top: 5px;
+    height: 3rem; 
+    background-color: lightblue;
+    padding-top: 10px;
+}
+
+body {
+    padding: 5%;
+}
+
+.container {
+    width: 640px; 
+    height: 640px; 
+    margin: 20px auto; 
+    background-color: cadetblue; 
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+    opacity: 0.95;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+  }
+
+  /* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  /* Add a color to the delete button */
+  .deletebtn {
+    background-color: #f44336;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .modal-container {
+    padding: 16px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
